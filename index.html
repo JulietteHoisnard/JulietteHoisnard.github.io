@@ -8,14 +8,14 @@
         <script src="https://**********************/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="Images/logo.png" />
+        <link rel="icon" href="images/logo.png" />
         <title>Juliette Hoisnard</title>
-     </head>
+    </head>
     <body>
       <div id="home" class="banner-img">
         <div id="navbar-wrapper">
           <div class="navbar-name">
-            <a href="#home"><img src="images/logo.png" alt="LOGO"/>J | H</a>
+            <a href="#home"><img src="images/logoW.png" alt="LOGO"/></a>
           </div>
           <div class="navbar-list">
             <ul>
@@ -23,7 +23,7 @@
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#skills">SKILLS</a></li>
               <li><a href="#contact">CONTACT</a></li>
-              <li>|</li>
+              <li><a>|</a></li>
               <li><a href="#">BLOG</a></li>
             </ul>
           </div>
@@ -36,7 +36,10 @@
         <div class="banner-text-box">
         <div class="banner-text">
             <h2>JULIETTE HOISNARD</h2>
-            <p>Junior Full-Stack Web Developer</p>
+            <div class="banner-text-job-title">
+              <p>Junior Full-Stack</p>
+              <p>Web Developer</p>
+            </div>
           </div>
         </div>
       </div>
@@ -44,5 +47,47 @@
       <div id="portfolio">
         <h2>PORTFOLIO</h2>
       </div>
+
+      <div id="about">
+        <h2>ABOUT</h2>
+      </div>
+
+      <div id="skills">
+        <h2>SKILLS</h2>
+      </div>
+
+      <div id="contact">
+        <h2>CONTACT</h2>
+      </div>
+
+      <script>
+        // Navbar Scroll-Effect
+        const navbar = document.querySelector('#navbar-wrapper');
+        window.onscroll = () => { 
+          if (document.documentElement.scrollTop >= 50 ) {
+            navbar.style.background = "black";
+            navbar.style.transition = '0.8s ease'
+          } 
+          else {
+            navbar.style.background = "transparent";
+          }
+        };
+    
+        // mobile navbar
+        const navSlide = () => {
+          const burger = document.querySelector('.burger');
+          const nav = document.querySelector('.navbar-list');
+          const navbar = document.querySelector('#navbar-wrapper');
+    
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            navbar.style.background = "black";
+            burger.classList.toggle('toggle');
+          });
+        };
+    
+        navSlide();
+    
+      </script>
     </body>
 </HTML>

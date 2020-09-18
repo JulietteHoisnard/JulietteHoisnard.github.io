@@ -27,6 +27,11 @@
   opacity: 1;
 }
 
+.navbar-name img {
+  height: 60px;
+  padding: 10px 0;
+}
+
 .navbar-list {
   display: flex;
   width: 30%;
@@ -50,10 +55,8 @@
 }
 
 .navbar-list a:hover {
-  /* color: #F6DB48; */
   transition: 0.2s ease;
   opacity: 1;
-  /* border-bottom: 1px solid #f6db48; */
 }
 
 .navbar-list li {
@@ -77,7 +80,7 @@
 }
 
 .banner-img {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/P1240500_BW.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/P1240500_BW.jpg");
   object-fit: cover;
   height: 100vh;
   background-attachment: fixed;
@@ -91,16 +94,21 @@
   justify-content: center;
   align-items: center;
   padding-top: 150px;
+  margin: auto;
 }
 
+.banner-text {
+  color: white;
+  letter-spacing: 0.7rem;
+  opacity: .8;
+  text-align: center;
+}
 .banner-text h2 {
-  color: white;
+  margin: 150px 0 10px 0;
 }
-
-.banner-text p {
-  color: white;
+.banner-text-job-title {
+  display: flex;
 }
-
 
 @media screen and (max-width:768px) {
   body {
