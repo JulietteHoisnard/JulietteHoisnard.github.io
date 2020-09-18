@@ -1,0 +1,190 @@
+@font-face 
+{
+    font-family: 'sofiapro';
+    src: url('sofiapro-light.otf');
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+body > * {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+body section:nth-last-child(2) {    flex-grow: 1;}
+body
+{
+    font-family: 'sofiapro';
+    margin: 0px;
+    text-align: justify;
+    font-size: 20px;
+}
+.withbackground
+{
+    background-image: url('marita-kavelashvili-ugnrXk1129g-unsplash.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header{
+   display:flex;
+   background-color: #a0baa0;
+ }
+
+ /** LOGO **/
+ header > a:first-child {
+     padding: .8em;
+ }
+ header a img {height: 3rem;}
+
+/** TITLE **/
+header h2 {font-size: small; font-style: italic;}
+header h1 {font-size: x-large; padding-top: 0.5rem; margin:0;}
+
+ /** NAVIGATION **/
+header nav {
+    flex: 1 0 auto;
+    display: flex;
+    list-style-type: none;
+    font-size: x-large;
+    align-items: stretch;
+}
+ 
+header nav a {
+    flex: 1 0 0; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+ header a {
+    color: black;
+    text-decoration: none;
+}
+ header a:hover {
+    color: rgb(105, 103, 103);
+    font-weight: bold;
+ }
+#intro
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+.averagesection
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+}
+section h1 {font-size: xx-large;}
+section h2 {font-size: x-large;}
+section ul
+{
+    font-size: 22px;
+    margin: 10px 0;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+}
+section ul a
+{
+    text-decoration: none;
+    color:black;
+}
+section ul a:hover
+{
+    color: rgb(105, 103, 103);
+}
+.carrousel
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:1800px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-direction: space-evenly;
+}
+.listcarrousel
+{
+    width: 400px;
+}
+.imgcarrousel
+{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    padding: 0;
+}
+.imagearticle
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.otherimagearticle
+ {
+    width: 100%;
+ }
+ table
+    {
+    border-collapse: collapse;
+    border: 1px solid black;
+    line-height: 1.6rem;
+    overflow-wrap: break-word;
+    }
+    th, td
+    {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+    }
+    th {background-color:rgb(176, 209, 205);}
+    td:nth-child(5), th:nth-child(5)    {text-align:left;}
+    textarea
+    {
+        width: 800px;
+        height: 300px;
+    }
+#emptyspace
+{
+    height:100px;
+}
+ footer 
+ {
+     text-align: center;
+     color: white;
+ }
+ footer a
+{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#footeralone
+{
+    width: 100%;
+    background-image: url(../1_Website/marita-kavelashvili-ugnrXk1129g-unsplash_bottom.jpg);
+}
+.menu-mobile{display: none;}
+
+@media screen and (min-width:)
+@media screen and (min-width: 320px) (max-width: 600px) {
+header nav {
+    flex: 1 0 auto;
+    display: flex;
+    list-style-type: none;
+    font-size: x-large;
+    align-items: stretch;
+}
+}   
