@@ -104,13 +104,10 @@
   text-align: center;
 }
 .banner-text h2 {
-  margin: 150px 0 10px 0;
-}
-.banner-text-job-title {
-  display: flex;
+  margin: 200px 0 10px 0;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
@@ -142,9 +139,14 @@
     margin: 0 0 50px 0;
   }
 
+  #bar {
+    display: none;
+  }
+
   .burger {
     display: block;
   }
+
 }
 
 .nav-active {
