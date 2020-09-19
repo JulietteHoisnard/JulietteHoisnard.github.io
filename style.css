@@ -1,9 +1,13 @@
 @import url('components/navbar.css');
+@import url('components/portfolio.css');
+@import url('components/heatmap.css');
 
 @font-face 
 {
     font-family: 'Montserrat', sans-serif;
     src: url('Montserrat-Regular.ttf');
+    font-family: 'Tribute', roman;
+    src: url('Tribute-Roman.ttf');
 }
 
 html {
@@ -20,4 +24,10 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+}
+
+h2 {
+  width: 100%;
+  margin: 60px 0 40px 0;
+  text-align: center;
 }
