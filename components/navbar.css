@@ -54,6 +54,12 @@
   opacity: .8;
 }
 
+#bar a {
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+}
+
 .navbar-list a:hover {
   transition: 0.2s ease;
   opacity: 1;
