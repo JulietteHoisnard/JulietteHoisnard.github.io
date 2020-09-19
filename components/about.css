@@ -1,0 +1,14 @@
+.box-about {
+  display: flex;
+  margin: auto;
+  wodth: 60%;
+}
+
+.juliette-photo {
+  width: 32%;
+  margin: 0 10px;
+}
+
+.box-about p {
+  width: 65%;
+}

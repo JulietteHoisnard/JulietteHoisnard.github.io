@@ -1,0 +1,15 @@
+.fas, .fab {
+  color: black;
+  opacity: 0.7;
+}
+
+.fas:hover, .fab:hover {
+  opacity: 1;
+}
+
+.box-contact {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 160px auto;
+}
