@@ -5,6 +5,7 @@
 
 .fas:hover, .fab:hover {
   opacity: 1;
+  transition: .4s ease;
 }
 
 .box-contact {
@@ -12,4 +13,10 @@
   display: flex;
   justify-content: space-between;
   margin: 100px auto 160px auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box-contact {
+    margin: 60px auto 100px auto;
+  }
 }

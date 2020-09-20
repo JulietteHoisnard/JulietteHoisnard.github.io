@@ -15,13 +15,23 @@
 }
 
 #portfolio a:hover {
+  transition: .8s ease;
   text-decoration: none;
   color: blueviolet;
-  opacity: .8;
+  opacity: .7;
 }
 
 #portfolio a:hover > .translate-effect { 
-  background-color: yellow; }
+  transition: .8s ease;
+  display: inline;
+  text-align: center;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+}
 
 .project-img {
   width: 100%;
@@ -29,17 +39,16 @@
   object-fit:cover;
 }
 
-.translate-effect {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+#portfolio a:hover > .project-img {
+  filter: brightness(30%);
 }
 
-.translate-effect:hover {
-  top: -40px;
+.translate-effect {
+  display: none;
+}
+
+h3 {
+  letter-spacing: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -48,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #portfolio li {  
     width: 100%;
   }

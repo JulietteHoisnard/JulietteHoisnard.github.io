@@ -44,11 +44,27 @@
       <div id="portfolio">
         <h2>PORTFOLIO</h2>
         <ul>
-          <li>
-            <a href="http://www.greenbird.cyou/" target="blank"><img class="project-img" src="images/greenbird.jpg" alt="greenbird"></a>
-          </li>
           <li>  
-            <a href="https://petpal-web.herokuapp.com/" target="blank"><img class="project-img" src="images/petpal.jpg" alt="petpal"></a>
+            <a href="https://petpal-web.herokuapp.com/" target="blank">
+              <img class="project-img" src="images/petpal.jpg" alt="petpal">
+              <div class="translate-effect">
+                <h3>PETPAL</h3>
+                <p>Group project</p>
+                <p>Find your pet pal for an hour or an adventure!</p>
+                <p>08.2020</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.greenbird.cyou/" target="blank">
+              <img class="project-img" src="images/greenbird.jpg" alt="greenbird">
+              <div class="translate-effect">
+                <h3>GREENBIRD</h3>
+                <p>Group project</p>
+                <p>Easy challenges for positive environmental impact</p>
+                <p>09.2020</p>
+              </div>
+            </a>
           </li>
           <li>
             <a href="heatmap.html" target="blank">
@@ -57,6 +73,7 @@
                 <h3>HEATMAP</h3>
                 <p>Solo project</p>
                 <p>Heatmap of my cycling tracks from Strava</p>
+                <p>09.2020</p>
               </div>
             </a>
           </li>
@@ -68,10 +85,10 @@
         <div class="box-about">
           <img class="juliette-photo" src="images/JUD_0220_light.jpeg" alt="juliette-photo">
           <div>
-            <p> Hi I'm Juliette! I'm French and I'm currently live in Berlin. After 2.5 years as Project Quality Engineer in France, it was time for me to move abroad and recenter my career. I embraced Le Wagon Web Development training in Berlin this summer. I am now looking for a full-time position as Web Developer. In the same time, I am Teacher Assistant (freelancer) at Le Wagon as a part-time job.
-              I love Berlin, especially for cycling around. A fun fact is that I started road cycling because every sport clubs were closed due to Corona crisis. Otherwise, when dance studios are open and safe, I'm a dance alcoholic.
+            <p> Hi I'm Juliette! I'm French and I'm currently living in Berlin. After 2.5 years as Project Quality Engineer in France, it was time for me to move abroad and recenter my career. I embraced Le Wagon Web Development training in Berlin this summer. I am now looking for a full-time position as Web Developer. At the same time, I am a part-time teacher assistant at Le Wagon as a freelancer.
+              I love Berlin, especially for cycling around. A fun fact is that I started road cycling because every sport clubs were closed due to Corona crisis. Otherwise, when dance studios are open and safe, I'm a dance addict, from salsa to ballet.
             </p>
-            <a class="resume" href="images/CV-JH.pdf">Dowload resume</a>
+            <a class="resume" href="images/CV-JH.pdf"><i class="fas fa-file-download fa-1x"></i>  Dowload resume</a>
           </div>
         </div>
       </div>
@@ -94,14 +111,40 @@
       <div id="contact">
         <h2>CONTACT</h2>
         <div class="box-contact">
-          <a href="#" target="blank"><i class="fas fa-envelope-square fa-4x"></i></a>
+          
+            <script type="text/javascript" language="javascript">
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature coded by Andrew Moulden
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              { coded = "1xKyqiiq@tVypMAfY.of"
+                key = "B9GvVNrpxPcRzDCy3hnYL07WlEfjFHIabge6StMwkZmUK4o1QsuA8Tq5Ji2XOd"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                  if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                  }
+                  else {     
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                  }
+                }
+              document.write("<a href='mailto:"+link+"'>"+"<i class='fas fa-envelope-square fa-4x'></i>"+"</a>")
+              }
+              //-->
+              </script><noscript>Sorry, you need Javascript on to email me.</noscript>
           <a href="https://github.com/JulietteHoisnard" target="blank"><i class="fab fa-github-square fa-4x"></i></a>
           <a href="https://www.linkedin.com/in/juliette-hoisnard" target="blank"><i class="fab fa-linkedin fa-4x" href="https://www.linkedin.com/in/juliette-hoisnard" target="blank"></i></a>
         </div>
       </div>
 
       <div id="footer">
-
+        <div>
+          <p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Juliette Hoisnard</p>
+          <p>Last update: September 2020</p>
+        </div>
       </div>
 
       <script>
