@@ -113,7 +113,7 @@
   margin: 200px 0 10px 0;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
@@ -154,14 +154,14 @@
   }
 
   .banner-text h2 {
-    margin: 100px 0 10px 0;
+    margin: 150px 0 10px 0;
   }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .banner-text h2 {
-    margin: 80px 0 10px 0;
+    margin: 150px 0 10px 0;
   }
 }
 

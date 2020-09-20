@@ -20,9 +20,3 @@
     margin: 60px auto 100px auto;
   }
 }
-
-@media screen and (orientation:portrait) {
-  .box-contact {
-    margin: 60px auto 100px auto;
-  }
-}
