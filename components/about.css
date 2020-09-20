@@ -51,3 +51,22 @@
     width: 100%;
   }
 }
+
+@media screen and (orientation:portrait) {
+  .box-about {  
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .juliette-photo {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  #about p {
+    width: 100%;
+  }
+}
