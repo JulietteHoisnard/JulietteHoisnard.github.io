@@ -39,6 +39,11 @@
           </div>
         </div>
       </div>
+      <div class="arrow-container">
+        <div id="scrollhint">
+          <a href="#" class="arrow down" onclick="scrollDown(event)">Scrolldown</a>
+        </div>
+      </div>
       
       <div id="portfolio">
         <h2>PORTFOLIO</h2>
@@ -87,7 +92,7 @@
             <p> Hi I'm Juliette! I'm French and I'm currently living in Berlin. After 2.5 years as Project Quality Engineer in France, it was time for me to move abroad and recenter my career. I embraced Le Wagon Web Development training in Berlin this summer. I am now looking for a full-time position as Web Developer. At the same time, I am a part-time teacher assistant at Le Wagon as a freelancer.
               I love Berlin, especially for cycling around. A fun fact is that I started road cycling because every sport clubs were closed due to Corona crisis. Otherwise, when dance studios are open and safe, I'm a dance addict, from salsa to ballet.
             </p>
-            <a class="resume" href="images/CV-JH.pdf"><i class="fas fa-file-download fa-1x"></i>  Dowload resume</a>
+            <a class="resume" href="documents/CV-JH.pdf"><i class="fas fa-file-download fa-1x"></i>  Dowload resume</a>
           </div>
         </div>
       </div>
@@ -97,16 +102,16 @@
         <ul>
           <li>Ruby on rails</li>
           <li>Ruby</li>
-          <li>JavaScript</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
           <li>Node.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
           <li>Git</li>
           <li>SQL</li>
           <li>Bootstrap</li>
           <li>MVC</li>
           <li>REST API</li>
-          <li>devise</li>
           <li>Project Management</li>
           <li>Quality Management</li>
         </ul>
@@ -178,7 +183,13 @@
         };
     
         navSlide();
-    
+
+        // Arrow scroll-effect
+        function scrollDown(e) {
+          e.preventDefault()
+          document.querySelector("#portfolio").scrollIntoView({behavior: "smooth"});
+        }
+          
       </script>
     </body>
 </HTML>
