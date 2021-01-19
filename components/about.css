@@ -19,10 +19,7 @@
 
 #about a {
   text-decoration: none;
-  padding: 10px;
   color: black;
-  border: solid 1px black;
-  border-radius: 5px;
   opacity: 0.7;
 }
 
@@ -30,11 +27,21 @@
   text-decoration: none;
   color: black;
   opacity: 1;
-  transition: .4s ease;
+  transition: 0.4s ease;
+}
+
+#about .resume {
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+#about .linkinbio {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
-  .box-about {  
+  .box-about {
     width: 100%;
     flex-direction: column;
     justify-content: center;
