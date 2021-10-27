@@ -1,0 +1,163 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.0cm, bottom=1.3cm, left=1.2cm, right=1.0cm]{geometry}
+\usepackage[english]{babel}
+\setlength{\hintscolumnwidth}{3.5cm} % width of the left column (dates)
+\usepackage{multicol} % multi-columns itemize
+%\setlength{\makecvtitlenamewidth}{20cm}
+
+\firstname{Juliette}
+\familyname{Hoisnard}
+\title{Frontend Developer}
+\photo[80pt][0.0pt]{JUD_0209reworked4light} % '64pt' is the height the picture must be resized to, 0.0pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\address{}{Berlin}{{French nationality}}{} % street, city, country
+\email{juliette@hoisnard.fr}
+
+\homepage{juliette.hoisnard.fr}
+\social[github]{JulietteHoisnard}
+%\extrainfo{05/11/1994}
+%\quote{Objective: ...}
+\renewcommand*{\quotefont}{\Large\bfseries} % override quote's default style
+
+% I took the original code from moderncvstylebanking.sty and changed line 25
+% USEFUL for theme banking
+% \makeatletter
+% \renewcommand*{\maketitle}{%
+%   \setlength{\maketitlewidth}{1.0\textwidth}%
+%   \hfil%
+%   \parbox{\maketitlewidth}{%
+%     \centering%
+%     % name and title
+%     \namestyle{\@firstname~\@lastname}%
+%     \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title)
+%     % detailed information
+%     \addressfont\color{color2}%
+%     \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
+%       \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}% if \addresstreet is defined, \addresscity and \addresscountry will always be defined but could be empty
+%       \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
+%       \flushmaketitle\@firstmaketitleelementtrue\\}%
+%     \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
+%       \addtomaketitle{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
+%     \ifthenelse{\isundefined{\@email}}{}{\addtomaketitle{\emailsymbol\emaillink{\@email}}}%
+%     \ifthenelse{\isundefined{\@homepage}}{}{\addtomaketitle{\homepagesymbol\httplink{\@homepage}}}%
+%     \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
+%       \addtomaketitle{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
+%     \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
+%     \flushmaketitle}\\[2.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
+%  \makeatother
+
+\begin{document}
+\makecvtitle
+\vspace{-30pt}
+\section{Experience}
+
+\cventry{Apr 2021 -- Present}{Frontend Developer}{\href{https://www.inno-focus.com/en/software-and-consulting-for-digitization-collaboration-and-industry-4-0/}{Inno-Focus Businessconsulting GmbH}}{Berlin}{}{
+\begin{itemize}
+        \item Development of frontend features on the core product Inno-Ecos, a platform connecting multiple stakeholders of a business and adapted to each customer needs with multiple small apps.
+	\item Stack: JavaScript, jQuery, HTML, CSS, ASP.NET, C\#.
+\end{itemize}
+}
+\vspace{7pt}
+\cventry{Oct 2020 -- Apr 2021}{Frontend Developer (freelancer)}{\href{https://www.linkedin.com/company/2tonnes/}{2 tonnes}}{remote}{}{
+\begin{itemize}
+        \item Development of new features such as the participant access for a 100\% remote game, the development of a world version and the creation of a carbon footprint calculator. 
+        \item Stack: React / Redux, JavaScript, HTML, CSS, Rest API with Python.
+\end{itemize}
+}
+\vspace{7pt}
+\cventry{Oct 2020 -- Dec 2020}{Teacher Assistant (freelancer)}{\href{https://www.lewagon.com/}{Le Wagon}}{Berlin (Germany)}{}{
+Supporting new students in the Bootcamp with pair-programming in Ruby-On-Rails and JavaScript.
+}
+\vspace{7pt}
+\cventry{Oct 2017 -- Jan 2020}{Quality Project Engineer}{\href{https://www.valeo.com/en/}{Valeo CDA Systems}}{Créteil (France)}{}{
+Worked on a 500 million euro hands-free car access system project for PSA Group. From early development to production launch phase, my duties involved:
+\vspace{3pt}
+\begin{itemize}
+        \item Chasing risks and challenging the team so that customer quality objectives are fulfilled. 
+    	\item Insuring software validation KPIs in 15 acceptance testing reviews with customer.
+	\item Managing product and process validation test plan.
+	\item Supervizing 8 customer audits in Veszprem, Hungary and Shenzhen, China.
+	\item Winning a Request for Quotation on a similar product for PSA Group (200 million euros).
+\end{itemize}
+}
+\vspace{7pt}
+\cventry{Feb 2017 -- Jul 2017}{Intern in additive manufacturing}{\href{https://www.airbus.com/}{Airbus}}{Hamburg (Germany)}{}{}
+\vspace{7pt}
+\cventry{Sep 2015 -- Feb 2016}{Intern in a validation laboratory}{\href{https://www.valeo.com/en}{Valeo Powertrain Systems}}{Créteil (France)}{}{}
+\vspace{7pt}
+\section{Education}
+
+\cventry{Jul 2020 -- Sep 2020}{Web development bootcamp}{\href{https://www.lewagon.com/}{Le Wagon}}{Berlin (Germany)}{}{
+\begin{itemize}
+	\item 9-week intensive coding bootcamp on Ruby on Rails, HTML, CSS, JavaScript, SQL and Git.
+	\item Designed, implemented and shipped to production a website inspired by AirBnB.
+	\item Created {\href{https://github.com/JulietteHoisnard/greenbird}{Greenbird}}, a Rails app for everyday eco challenges, hosted on Heroku.
+\end{itemize}
+}
+
+\vspace{7pt}
+\cventry{Sep 2014 -- Jul 2017}{Diplôme d’ingénieur en génie mécanique (Mechanical engineering master degree) }{\href{https://www.utc.fr/formations/diplome-dingenieur/ingenierie-mecanique-im.html}{Université de Technologie de Compiègne}}{Compiègne (France)}{}{
+\begin{multicols}{2} 
+\begin{itemize}
+\item Project management
+\item Quality \& production process management
+%\item Manufacturing Process Management
+\item Value engineering
+\item International economy
+\item Electric machines
+\item Control system engineering
+\item Power electronics
+\item Mechanical properties of materials / CAD
+%\item Strength of Materials and CAD
+\end{itemize}
+\end{multicols}
+} % year, degree, institution, city+picture = {\includegraphics[scale=0.5]{picture}City}, grade, description
+
+\vspace{7pt}
+\cventry{Aug 2016 -- Dec 2016}{Erasmus exchange program}{\href{https://www.lut.fi/web/en}{Lappeenranta University of Technology}}{(Finland)}{}{
+\begin{multicols}{2}
+\begin{itemize}
+\item Entrepreneurship theory
+%\item Introduction to Sustainability
+\item Sustainable strategy \& business ethics
+\item Digital control design
+%\item Electricity Market
+\item Embedded system programming (C++)
+\end{itemize}
+\end{multicols}
+} % year, degree, institution, city+picture = {\includegraphics[scale=0.5]{picture}City}, grade, description
+
+\vspace{7pt}
+\cventry{Sep 2012 -- Jul 2014}{Two-year undergraduate intensive course in mathematics and physics}{\href{http://www.janson-de-sailly.fr/}{Lycée Janson-de-Sailly}}{Paris (France)}{}{}
+\vspace{7pt}
+\cventry{Jul 2012}{Scientific Baccalaureat (Abitur equivalent) obtained with highest honors}{Lycée Vincent Van Gogh}{Ermont (France)}{}{}
+
+\vspace{7pt}
+\section{Languages}
+\cvlanguage{French}{Native speaker}{}
+\cvlanguage{English}{Full professional proficiency, European C1 Level}{\textbf{TOEIC 930/990 (Spring 2016)}{}}
+\cvlanguage{German}{Intermediate, European B2 Level}{}
+
+\vspace{7pt}
+\section{General Skills}
+% \cvcomputer{category}{programs}{category}{programs}
+% \cvdoubleitem{subtitle}{text}{subtitle}{text}
+\cvitem{Web Development}{JavaScript ES6, React, Redux, HTML5, CSS3, jQuery, Git, SQL, REST APIs, Typescript, Jest, Ruby on Rails}
+\cvitem{Project Management}{Microsoft Project (Gantt charts), Agile management}
+\cvitem{Product Skills}{PSPO training, Scrum, business models, product lifecycle}
+\cvitem{Operating systems}{\textbf{}Linux user, familiar with Windows}
+\cvitem{Engineering}{\textbf{}LabVIEW, Scilab, CATIA, Matlab, LaTeX}
+\cvitem{Quality Management}{APQP, PPAP, FMEA, Control Plan, 8D, IATF 16949, ISO 9001}
+%\vspace{10pt}
+%\section{Certifications}
+%\cvitem{Agile management}{\textbf{}PSPO I - Professional Scrum Product Owner I}
+
+
+\vspace{7pt}
+\section{Hobbies}
+\cvitem{Sport}{\textbf{}Road cycling (3,000 kms per year), yoga.}
+\cvitem{Dancing}{\textbf{}Certified Zumba instructor, salsa teacher, modern dance.}
+\cvitem{Music}{\textbf{}Guitar (15+ years).}
+\cvitem{Volunteer}{\textbf{}Animator of the online participative game 2tonnes.}
+\end{document}
